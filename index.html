@@ -1,0 +1,74 @@
+!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nirvana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Biography</h1>
+        <p>Hoje eu vou compartilhar um pouco sobre a biografia do grupo nirvana, e algumas curiosidades sobre.</p>
+    </header>
+    <main>
+        <article>
+             <img src="imagem-Nirvana(1).jpeg" 
+             alt="logotipo conceitual do grupo Nirvana de onde esta uma rosa com a logotipo da banda e o nome dela logo acima em tons amarelados">
+            <div>
+                <h2>Um pouco da historia</h2>
+                <p class="artigo-autor">Por: Ana Paramustchak</p>
+                <p> O Nirvana foi uma banda de rock formada em 1987, em Aberdeen, Washington, nos Estados Unidos. Seus principais integrantes eram Kurt Cobain (vocal e guitarra), Krist Novoselic (baixo) e Dave Grohl (bateria).
+                    A banda ficou mundialmente famosa em 1991, com o álbum Nevermind, que incluía o grande sucesso "Smells Like Teen Spirit". O Nirvana se tornou um dos principais nomes do grunge, um estilo de rock muito popular nos anos 1990.
+                    Em 1993, lançou o álbum In Utero, mostrando um som mais pesado e alternativo. Porém, em 1994, a trajetória da banda foi interrompida pela morte de Kurt Cobain.Mesmo com uma carreira curta, o Nirvana marcou a história da música e continua influenciando artistas até hoje.</p>
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+        <article>
+            <img src="imagem-Nirvana(1).jpeg" 
+             alt="logotipo conceitual do grupo Nirvana de onde esta uma rosa com a logotipo da banda e o nome dela logo acima em tons amarelados">
+            <div>
+                <h2>Curiosidades</h2>
+                <p class="artigo-autor">Por: Ana Paramustchak</p>
+                <p>Agora eu vim compartilhhar algumas curiosidades sobre o grupo</p>
+                <p>Kurt Cobain era canhoto e tocava guitarra com a mão esquerda.
+                    A música "Smells Like Teen Spirit" se tornou um dos maiores sucessos da banda.
+                    Dave Grohl, baterista do Nirvana, fundou a banda Foo Fighters após o fim do grupo.
+                    A capa do álbum Nevermind mostra um bebê nadando atrás de uma nota de dólar.
+                    O Nirvana fez shows no Brasil em 1993, durante o festival Hollywood Rock.
+                    Antes de Dave Grohl, a banda teve vários bateristas.
+                    Kurt Cobain gostava dos Beatles e se inspirou neles para compor algumas músicas.Em 2014, o Nirvana entrou para o Rock & Roll Hall of Fame.
+                    O álbum MTV Unplugged in New York foi gravado ao vivo em 1993.
+                    Mesmo tendo acabado em 1994, o Nirvana continua influenciando bandas e artistas até hoje.</p>
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+    </main>
+</body>
+<script>
+    const botoes = document.querySelectorAll("button");
+
+    botoes.forEach(function (botao) {
+        let curtiu = false;
+        botao.addEventListener("click", botaoClicado);
+        function botaoClicado() {
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+            if (curtiu === false){
+                texto.textContent++;
+                curtiu = true;
+            } else{
+                texto.textContent--;
+                curtiu = false;
+            }
+        }
+    })
+
+
+</script>
+
+</html>
